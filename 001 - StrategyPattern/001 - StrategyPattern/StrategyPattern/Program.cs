@@ -1,5 +1,7 @@
 ﻿using StrategyPattern.Ducks;
 using StrategyPattern.Interfaces.FlyBehavior;
+using StrategyPattern.Interfaces.FlyBehavior.FlyImplementations;
+using StrategyPattern.Interfaces.QuackBehavior.SpeakImplimentations;
 
 namespace StrategyPattern
 {
@@ -17,6 +19,11 @@ namespace StrategyPattern
             TestDuck(redheadDuck);
             TestDuck(decoyDuck);
             TestDuck(rubberDuck);
+            TestDuck(RobotDuck);
+
+            RobotDuck.SetSpeakBehavior(new Mute());
+            RobotDuck.SetFlyBehavior(new FlyWithWings());
+
             TestDuck(RobotDuck);
         }
 

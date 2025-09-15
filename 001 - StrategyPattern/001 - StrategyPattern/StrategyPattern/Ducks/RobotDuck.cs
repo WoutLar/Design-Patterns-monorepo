@@ -18,7 +18,7 @@ namespace StrategyPattern.Ducks
         public RobotDuck() 
         {
             speakBehavior = new MetalicScreach();
-            flyBehavior = new FlyWithWings();
+            flyBehavior = new FlyWithRocket();
             swimbehaviour = new Sink();
         }
         public override void Display()

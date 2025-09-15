@@ -14,6 +14,23 @@ namespace StrategyPattern.Ducks
         protected SpeakBehavior speakBehavior;
         protected FlyBehavior flyBehavior;
         protected SwimBehaviour swimbehaviour;
+
+        public void SetSpeakBehavior(SpeakBehavior newSpeakBehavior)
+        {
+            speakBehavior = newSpeakBehavior;
+        }
+
+
+        public void SetFlyBehavior(FlyBehavior newFlyBehavior)
+        {
+            flyBehavior = newFlyBehavior;
+        }
+
+
+        public void SetSwimBehavior(SwimBehaviour newSwimBehaviour)
+        {
+            swimbehaviour = newSwimBehaviour;
+        }
         public abstract void Display();
         public void PerformSpeak()
         {
