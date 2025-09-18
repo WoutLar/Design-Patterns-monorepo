@@ -9,7 +9,6 @@ namespace ObserverPattern.Displays
 {
     internal class StatisticsDisplay : Observer, DisplayElement
     {
-        private float temperature;
         private float sumTemperature = 0;
         private float maxTemp = 0;
         private float minTemp = 0;
