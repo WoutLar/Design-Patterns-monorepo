@@ -9,8 +9,7 @@ namespace DecoratorPattern.Beverages
     enum Size
     {
         TALL,
-        GRANDE,
-        VENDI
+        GRANDE,        VENDI
     }
     internal abstract class Beverage
     {

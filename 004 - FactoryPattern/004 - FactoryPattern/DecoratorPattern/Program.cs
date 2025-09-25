@@ -9,17 +9,13 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
+            CoffeeFactory factory = new CafeWoedroeIncFactory();
+
             foreach (CoffeeType type in Enum.GetValues(typeof(CoffeeType)))
             {
-                Beverage beverage = CoffeeFactory.MakeCoffee(type);
-                PrintBeverage(beverage);
+                Beverage beverage = factory.MakeCoffee(type);
+                factory.PrintBeverage(beverage);
             }
-        }
-
-
-        static void PrintBeverage(Beverage beverage)
-        {
-            Console.WriteLine(beverage.GetDescription() + " $" +  beverage.SizeCost().ToString("#.##"));
         }
     }
 }
