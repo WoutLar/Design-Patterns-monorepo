@@ -1,0 +1,38 @@
+namespace DecoratorPattern.Const
+{
+    public enum CoffeeType
+    {
+        Espresso,
+        Doppio,
+        Lungo,
+        Macchiato,
+        Cappuccino,
+        Corretto,
+        ConPanna,
+        Americano,
+        CaffeLatte,
+        FlatWhite,
+        Romana,
+        Marocchino,
+        Mocha,
+        Bicerin,
+        Breve,
+        RafCoffee,
+        MeadRaf,
+        Galao,
+        Affogato,
+        Vienna,
+        Glace,
+        ChocolateMilk,
+        DemiCreme,
+        LatteMacchiato,
+        Freddo,
+        Frappuccino,
+        CaramelFrappuccino,
+        Frappe,
+        IrishCoffee,
+        TallEspresso,
+        GrandeEspresso,
+        VendiEspresso
+    }
+}
